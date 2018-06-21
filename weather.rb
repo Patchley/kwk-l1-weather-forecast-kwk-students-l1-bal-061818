@@ -29,7 +29,7 @@ end
 def city_weather_info (weather)
 	puts "The city is #{location(weather)}."
 	puts "The description is #{weather[:description]}."
-
+end
 # BONUS:  Write a method that takes in the weather hash as an argument and converts the farenheit temperature to celcius. Have the method round your answer to two decimal places. Is there a method we can use to round in Ruby?
 
 # Hint - how can we find the algorithm to convert Farenheit to Celsius?
