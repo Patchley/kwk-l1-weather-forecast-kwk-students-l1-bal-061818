@@ -10,19 +10,19 @@ $weather = {
 def location
 	puts $weather[:city]
 end
-location
+
 # 2. Using the location method as a guide, write a  method called "description" so it returns the description from the weather hash.
 def description
 	puts $weather[:description]
 end
-description
+
 # 3. Using the methods above and string interpolation, update the method below so that it returns a string that describes the current weather - for example: "The weather in New York is Partly Cloudy. The temperature is 66.1 degrees Farenheit." HINT: the method should RETURN the string, not print it to the terminal.
 def weather_report
 	return "The weather in #{location($weather)} is #{description($weather)}. The temperature is
 	#{$weather[:temperature_farenheit]} degrees Fahrenheit."
 
 end
-weather_report
+
 
 #4. Write a method that takes in the weather hash as an argument.
 # You'll want to use the each method to iterate over the hash and print out
@@ -32,7 +32,7 @@ def city_weather_info
 	puts "The description is #{$weather[:description]}."
 	puts "The temperature is #{$weather[temperature_farenheit]}."
 end
-city_weather_info
+
 # BONUS:  Write a method that takes in the weather hash as an argument and converts the farenheit temperature to celcius. Have the method round your answer to two decimal places. Is there a method we can use to round in Ruby?
 
 # Hint - how can we find the algorithm to convert Farenheit to Celsius?
